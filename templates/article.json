@@ -1,0 +1,11 @@
+{
+    "sections": {
+        "article": {
+            "type": "article",
+            "name": "Blog Details Page"
+        }
+    },
+    "order": [
+        "article"
+    ]
+}

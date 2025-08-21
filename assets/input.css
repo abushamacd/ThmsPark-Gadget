@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.container {
+  @apply mx-auto px-4;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  @apply focus:outline-none;
+}
+
+/* npx @tailwindcss/cli -i ./assets/input.css -o ./assets/tailwind.css --watch */

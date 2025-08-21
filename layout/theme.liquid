@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ shop.name }}</title>
+
+    {% comment %} jQuery {% endcomment %}
+    <script async src="{{'jquery.min.js' |  asset_url }}"></script>
+
+    {% comment %} Slick Carousal {% endcomment %}
+    <script src="{{ 'slick.min.js' | asset_url }}" defer></script>
+
+    {% comment %} Slick Theme CSS {% endcomment %}
+    {{ 'slick.css' | asset_url | stylesheet_tag }}
+
+    {% comment %} Tailwind {% endcomment %}
+    {{ 'tailwind.css' | asset_url | stylesheet_tag }}
+
+    {% comment %} Custom {% endcomment %}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+
+    {{ content_for_header }}
+  </head>
+  <body>
+    {% sections 'header-group' %}
+    {{ content_for_layout }}
+    {% sections 'footer-group' %}
+
+    {% comment %} Main {% endcomment %}
+    <script async src="{{'main.js' |  asset_url }}"></script>
+  </body>
+</html>

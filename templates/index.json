@@ -1,0 +1,17 @@
+{
+    "name": "Homepage",
+    "sections": {
+        "hero": {
+            "type": "hero",
+            "name": "Hero Section",
+        },
+        "newsletter": {
+            "type": "newsletter",
+            "name": "Newsletter Section"
+        }
+    },
+    "order": [
+        "hero",
+        "newsletter"
+    ]
+}
