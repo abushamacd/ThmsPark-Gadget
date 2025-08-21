@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .container {
-  @apply mx-auto px-4;
+  @apply mx-auto;
 }
 
 input[type="text"],
@@ -9,5 +9,8 @@ input[type="email"],
 input[type="password"] {
   @apply focus:outline-none;
 }
+
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* npx @tailwindcss/cli -i ./assets/input.css -o ./assets/tailwind.css --watch */

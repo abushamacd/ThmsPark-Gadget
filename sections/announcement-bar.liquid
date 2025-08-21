@@ -1,12 +1,20 @@
-<h1>Announcement Bar</h1>
+<div class="ab-bar dark:bg-black bg-white transition-all duration-300">
+  <div class="flex justify-between items-center container py-1">
+    <div class="text-black dark:text-gray-300">Free Delivary</div>
+    <div class=" text-end py-1 flex gap-2">
+      {%- render 'theme_switcher' -%}
+      <div class="text-black dark:text-gray-300">Track your order</div>
+    </div>
+  </div>
+</div>
 
 {% schema %}
 {
   "name": "Announcemet",
-  "settings": [],
   "enabled_on": {
     "groups": ["header"]
   },
+
   "presets": [
     {
       "name": "Announcemet Bar",
