@@ -1,9 +1,13 @@
-<div class="ab-bar dark:bg-black bg-white transition-all duration-300">
-  <div class="flex justify-between items-center container py-1">
-    <div class="text-black dark:text-gray-300">Free Delivary</div>
-    <div class=" text-end py-1 flex gap-2">
+<div class="ab-bar bg-[#DFFBDC] dark:bg-[#333333] transition-all duration-300 border-b border-b-[#339C00]">
+  <div class="flex justify-between items-center container py-1 ">
+    <div class="text-[#339C00] dark:text-[#DFFBDC] p-2 text-center">{{ section.settings.ab_text }}</div>
+    <div class="text-end py-1  gap-2 md:flex hidden">
       {%- render 'theme_switcher' -%}
-      <div class="text-black dark:text-gray-300">Track your order</div>
+
+      <div class="text-[#339C00] dark:text-[#DFFBDC] flex">
+        {{- 'location.svg' | inline_asset_content -}}
+        Track Order
+      </div>
     </div>
   </div>
 </div>
@@ -14,7 +18,14 @@
   "enabled_on": {
     "groups": ["header"]
   },
-
+  "settings": [
+    {
+      "type": "text",
+      "id": "ab_text",
+      "label": "Anouncement",
+      "default": "World wide free shipping. No minimum requirement"
+    }
+  ],
   "presets": [
     {
       "name": "Announcemet Bar",
