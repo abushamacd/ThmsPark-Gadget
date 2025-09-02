@@ -1,10 +1,19 @@
 <div class="text">
-  <div id="navbar" class="container flex justify-between top-0 left-0 right-0 !mx-auto">
-    <div class="order-1 flex-1 border-2">
-      <h2 class="text-2xl font-bold .font_bg">{{ shop.name }}</h2>
+  <div id="navbar" class="container flex justify-between items-center top-0 left-0 right-0 !mx-auto">
+    <div class="order-1 flex-1">
+      <h2 class="text-2xl font-bold .font_bg">
+        <a href="{{ shop.url }}" class="">{{ shop.name }}</a>
+      </h2>
     </div>
-    <div class="order-2 flex-1 border-2">Menu</div>
-    <div class="order-3 flex-1 border-2">Icon</div>
+    <div class="order-2 flex-2 ">
+      <ul class="mainmenu flex gap-6 justify-center items-center">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="order-3 flex-1 ">Icon</div>
   </div>
 </div>
 

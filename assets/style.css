@@ -1,29 +1,44 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.bg_primary{
-    background-color: #3FDD3C;
+.bg_primary {
+  background-color: #3fdd3c;
 }
 
-.bg_secondary{
-    background-color: #DFFBDC;
+.bg_secondary {
+  background-color: #dffbdc;
 }
 
-.bg_dark{
-    background-color: #333333;
+.bg_dark {
+  background-color: #333333;
 }
 
-.text_primary{
-    color: #339C00;
+.text_primary {
+  color: #339c00;
 }
 
-.text_secondary{
-    color: #DFFBDC;
+.text_secondary {
+  color: #dffbdc;
 }
 
 .sticky_navbar {
   position: fixed;
+}
 
+.mainmenu > li > a:hover {
+  color: #339c00;
+  border-bottom: 3px solid #339c00;
+  padding: 5px 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mainmenu > li {
+  padding: 10px 0px;
+}
+
+.mainmenu > li:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
