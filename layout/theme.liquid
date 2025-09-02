@@ -18,12 +18,15 @@
     {{ 'tailwind.css' | asset_url | stylesheet_tag }}
 
     {% comment %} Custom {% endcomment %}
+    {{ 'font.css' | asset_url | stylesheet_tag }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
 
     {{ content_for_header }}
   </head>
   <body>
-    {% sections 'header-group' %}
+    <header>
+      {% sections 'header-group' %}
+    </header>
     {{ content_for_layout }}
     {% sections 'footer-group' %}
 

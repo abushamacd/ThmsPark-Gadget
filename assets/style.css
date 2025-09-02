@@ -22,3 +22,8 @@ body{
 .text_secondary{
     color: #DFFBDC;
 }
+
+.sticky_navbar {
+  position: fixed;
+
+}
