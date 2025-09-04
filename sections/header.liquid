@@ -1,5 +1,8 @@
-<div class="text">
-  <div id="navbar" class="container flex justify-between items-center top-0 left-0 right-0 !mx-auto">
+<div class="dark:text-white text-black relative z-50 ">
+  <div
+    id="navbar"
+    class="container flex justify-between items-center top-0 left-0 right-0 !mx-auto border-b border-[#339C00]"
+  >
     <div class="order-1 flex-1">
       <h2 class="text-2xl font-bold .font_bg">
         <a href="{{ shop.url }}" class="">{{ shop.name }}</a>
@@ -8,12 +11,63 @@
     <div class="order-2 flex-2 ">
       <ul class="mainmenu flex gap-6 justify-center items-center">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
+        <li class="relative">
+          <a class="flex justify-center items-center relative top-[2px]" href="#"
+            >Shop
+            <span class="text-white">{{- 'angle_down.svg' | inline_asset_content -}}</span>
+          </a>
+          <!-- Dropdown Menu -->
+          <ul
+            class="dropdown_menu absolute bg-white w-44 px-4 py-2 top-14 rounded-md dark:bg-[#333333]"
+          >
+            <li><a href="#" class="">Category 1</a></li>
+            <li><a href="#" class="">Category 1</a></li>
+            <li><a href="#" class="">Category 1</a></li>
+            <li><a href="#" class="">Category 1</a></li>
+          </ul>
+        </li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
-    <div class="order-3 flex-1 ">Icon</div>
+    <div class="order-3 flex-1 ">
+      <ul class="actions flex gap-2 justify-start flex-row-reverse">
+        <li>
+          <a href="#" class=""
+            ><span class="">{{- 'user.svg' | inline_asset_content -}}</span></a
+          >
+        </li>
+        <li class="relative">
+          <a href="">
+            {{- 'cart.svg' | inline_asset_content -}}
+            <span class="absolute -top-2 -right-2 h-5 w-5 rounded-full bg_primary text-white text-center text-sm"
+              >2</span
+            ></a
+          >
+        </li>
+        <li class="relative">
+          <a href="">
+            {{- 'wishlist.svg' | inline_asset_content -}}
+            <span class="absolute -top-2 -right-2 h-5 w-5 rounded-full bg_primary text-white text-center text-sm"
+              >2</span
+            ></a
+          >
+        </li>
+        <li class="relative">
+          <a href="">
+            {{- 'compare.svg' | inline_asset_content -}}
+            <span class="absolute -top-2 -right-2 h-5 w-5 rounded-full bg_primary text-white text-center text-sm"
+              >2</span
+            ></a
+          >
+        </li>
+        <li class="relative">
+          <a href="">
+            {{- 'search.svg' | inline_asset_content -}}
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 

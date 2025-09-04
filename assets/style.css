@@ -1,10 +1,17 @@
+/* =========================
+   RESET / BASE
+========================= */
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
+/* =========================
+   COLORS (Background / Text)
+========================= */
 .bg_primary {
-  background-color: #3fdd3c;
+  background-color: #339c00;
 }
 
 .bg_secondary {
@@ -23,17 +30,50 @@ body {
   color: #dffbdc;
 }
 
+/* =========================
+   NAVBAR
+========================= */
 .sticky_navbar {
   position: fixed;
+  top: 10px;
+  border-radius: 8px;
+  padding: 0px 15px;
+  border: 1px solid #339c00;
 }
 
-.mainmenu > li > a:hover {
-  color: #339c00;
-  border-bottom: 3px solid #339c00;
-  padding: 5px 0px;
+html.dark #navbar:hover:not(.sticky_navbar) {
+  position: relative;
+  top: 10px;
+  border-radius: 8px;
+  padding: 0px 15px;
+  border: 1px solid #339c00;
+  background-color: #333333;
   transition: all 0.3s ease-in-out;
 }
 
+#navbar:hover:not(.sticky_navbar) {
+  position: relative;
+  top: 10px;
+  border-radius: 8px;
+  padding: 0px 15px;
+  border: 1px solid #339c00;
+  background-color: #dffbdc;
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar.sticky_navbar {
+  background-color: #dffbdc;
+  transition: all 0.3s ease-in-out;
+}
+
+html.dark #navbar.sticky_navbar {
+  background-color: #333333;
+  transition: all 0.3s ease-in-out;
+}
+
+/* =========================
+   MAIN MENU
+========================= */
 .mainmenu > li {
   padding: 10px 0px;
 }
@@ -41,4 +81,83 @@ body {
 .mainmenu > li:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
+}
+
+.mainmenu li a {
+  padding: 5px 0; /* keep consistent */
+  border-bottom: 3px solid transparent; /* invisible border by default */
+  transition: all 0.3s ease-in-out;
+}
+
+.mainmenu li a:hover {
+  color: #339c00;
+  border-bottom-color: #339c00; /* only change color, not size */
+}
+
+/* Arrows */
+.mainmenu > li a span {
+  position: relative;
+  top: 2px;
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.mainmenu > li:hover > a span {
+  transform: rotate(180deg);
+  top: 0px;
+  color: #339c00;
+}
+
+.mainmenu > li:hover svg {
+  color: #339c00;
+}
+
+/* =========================
+   DROPDOWN MENU
+========================= */
+.dropdown_menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.5);
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+.dropdown_menu > li {
+  padding: 7px 0px;
+}
+
+.dropdown_menu li:hover {
+  transform: translateX(7px);
+  transition: all 0.3s ease-in-out;
+}
+
+.mainmenu > li:hover .dropdown_menu {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+/* =========================
+   BANNER
+========================= */
+.single_banner img {
+  top: -57px;
+  position: relative;
+  transform: scale(1.155);
+  z-index: -99;
+  display: block; /* removes inline-gap issues */
+}
+
+/* =========================
+   OVERLAY
+========================= */
+.overly {
+  top: -57px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
 }
