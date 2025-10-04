@@ -9,6 +9,7 @@ ehthumbs.db
 Thumbs.db
 node_modules/
 package-lock.json
+yarn.lock
 
 # Shopify CLI files
 .shopify/

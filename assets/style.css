@@ -143,9 +143,7 @@ html.dark #navbar.sticky_navbar {
    BANNER
 ========================= */
 .single_banner img {
-  top: -57px;
   position: relative;
-  transform: scale(1.155);
   z-index: -99;
   display: block; /* removes inline-gap issues */
 }
@@ -160,4 +158,29 @@ html.dark #navbar.sticky_navbar {
   right: 0;
   bottom: 0;
   background-color: #000000;
+}
+
+.hero_section .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #339c00;
+  opacity: 0.5;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hero_section .slick-arrow:hover {
+  opacity: 1;
+}
+
+.hero_section .slick_prev {
+  left: 10px;
+}
+
+.hero_section .slick_next {
+  right: 10px;
 }
