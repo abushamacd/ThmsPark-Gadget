@@ -5,6 +5,10 @@
             "type": "hero",
             "name": "Hero Section",
         },
+        "texticon": {
+            "type": "texticon",
+            "name": "Icon with text Section",
+        },
         "newsletter": {
             "type": "newsletter",
             "name": "Newsletter Section"
@@ -12,6 +16,7 @@
     },
     "order": [
         "hero",
+        "texticon",
         "newsletter"
     ]
 }
