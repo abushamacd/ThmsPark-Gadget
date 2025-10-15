@@ -16,12 +16,17 @@
         "category": {
             "type": "category",
             "name": "Category Section"
+        },
+        "featured_category": {
+            "type": "featured_category",
+            "name": "Category Section"
         }
     },
     "order": [
         "hero",
         "texticon",
         "category",
+        "featured_category",
         "newsletter",
     ]
 }
