@@ -12,11 +12,16 @@
         "newsletter": {
             "type": "newsletter",
             "name": "Newsletter Section"
+        },
+        "category": {
+            "type": "category",
+            "name": "Category Section"
         }
     },
     "order": [
         "hero",
         "texticon",
-        "newsletter"
+        "category",
+        "newsletter",
     ]
 }
