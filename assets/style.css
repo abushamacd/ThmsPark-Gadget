@@ -220,10 +220,15 @@ html.dark #navbar.sticky_navbar {
   grid-row: span 2;
 }
 
+.grid-wrapper div {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
 .grid-wrapper img {
   transition: all 1s;
 }
 
-.grid-wrapper img:hover {
+.grid-wrapper div:hover img {
   transform: scale(1.1);
 }

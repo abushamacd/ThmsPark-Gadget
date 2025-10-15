@@ -20,11 +20,16 @@
         "featured_category": {
             "type": "featured_category",
             "name": "Category Section"
+        },
+        "featured_p": {
+            "type": "featured_product",
+            "name": "Category Section"
         }
     },
     "order": [
         "hero",
         "texticon",
+        "featured_p",
         "category",
         "featured_category",
         "newsletter",
