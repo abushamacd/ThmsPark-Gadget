@@ -1,0 +1,33 @@
+<div class="pb-20 overflow-hidden">
+  <div class="container">
+    <h2 class="section_title text-start">OUR Happy CUSTOMERS</h2>
+    <div class="testimonial_carousal">
+      {% for item in (1..10) %}
+        <div class="p-3">
+          <div class="testim-inner first relative mt-10 mb-5 px-6 pb-6 text-center border border-[#e5efff] bg-[#fefefe] rounded-md transition-all duration-500 ease-in-out">
+            <img
+              src="https://abushamacd.github.io/Softlab_SAAS/assets/img/testimonials3.jpg"
+              height=""
+              width=""
+              alt="testimonials"
+              class="testim-img relative !inline-block -mt-[55px] max-w-[110px] border border-[#e5efff] rounded-full p-[5px] bg-white transition-colors duration-500 ease-in-out"
+            >
+            <p class="my-[20px] mb-[5px] text-[17px] leading-[28px] italic">
+              The attention of a traveller, should be particularly turned to the various works of the nature.
+            </p>
+            <h6 class="mb-[5px] text-[16px] leading-[24px] font-bold text-[#258597]">
+              Emily Richards<span class="job-text"> - Copywriter</span>
+            </h6>
+            <div class="testim-rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

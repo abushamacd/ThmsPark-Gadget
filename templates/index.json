@@ -21,15 +21,20 @@
             "type": "featured_category",
             "name": "Category Section"
         },
-        "featured_p": {
+        "featured_product": {
             "type": "featured_product",
+            "name": "Category Section"
+        },
+        "testimonial": {
+            "type": "testimonials",
             "name": "Category Section"
         }
     },
     "order": [
         "hero",
         "texticon",
-        "featured_p",
+        "featured_product",
+        "testimonial",
         "category",
         "featured_category",
         "newsletter",

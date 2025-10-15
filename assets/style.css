@@ -232,3 +232,42 @@ html.dark #navbar.sticky_navbar {
 .grid-wrapper div:hover img {
   transform: scale(1.1);
 }
+
+/* Testimonials */
+/* .testimonial_carousal > svg {
+  position: absolute;
+  right: 40px;
+  top: -70px;
+} */
+
+.testimonial_carousal > svg:last-child {
+  right: 0;
+}
+
+.testimonial_carousal .slick-list {
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+.testimonial_carousal .slick-list.draggable {
+  overflow: inherit;
+}
+
+.testimonial_carousal .slick-slide:not(.slick-active) {
+  filter: blur(2px);
+}
+
+/* Testimonials */
+
+.testim-inner:hover {
+  border-color: #258597;
+  transform: scale(1.025);
+}
+
+.testim-inner:hover img {
+  border-color: #258597;
+}
+
+.testim-rating i {
+  color: #fdcc28;
+}
