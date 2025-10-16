@@ -28,6 +28,10 @@
         "testimonial": {
             "type": "testimonials",
             "name": "Category Section"
+        },
+        "promo_text": {
+            "type": "promo",
+            "name": "Category Section"
         }
     },
     "order": [
@@ -37,6 +41,7 @@
         "testimonial",
         "category",
         "featured_category",
+        "promo_text",
         "newsletter",
     ]
 }

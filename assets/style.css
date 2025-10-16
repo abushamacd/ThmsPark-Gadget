@@ -298,3 +298,42 @@ html.dark #navbar.sticky_navbar {
   right: 0px;
   top: -80px;
 }
+
+/*  */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  padding: 15px 0;
+}
+
+.marquee-group {
+  display: flex;
+  gap: 15px;
+}
+
+.marquee-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}

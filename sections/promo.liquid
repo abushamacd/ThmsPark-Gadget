@@ -1,0 +1,36 @@
+<div class="bg-black py-10 my-20">
+  <div class="promo_text">
+    <div class="marquee">
+      <div class="marquee-content">
+        {% for item in (1..4) %}
+          <div class="marquee-group">
+            <span class="marquee-item"
+              >Creative Design
+              {{- 'star_square.svg' | inline_asset_content -}}
+            </span>
+            <span class="marquee-item"
+              >Smart Strategy
+              {{- 'star_square.svg' | inline_asset_content -}}
+            </span>
+            <span class="marquee-item"
+              >Creative Design
+              {{- 'star_square.svg' | inline_asset_content -}}
+            </span>
+            <span class="marquee-item"
+              >Smart Strategysssssssssssssss
+              {{- 'star_square.svg' | inline_asset_content -}}
+            </span>
+            <span class="marquee-item"
+              >Creative Design Creative Design
+              {{- 'star_square.svg' | inline_asset_content -}}
+            </span>
+            <span class="marquee-item"
+              >Brand Growth
+              {{- 'star_square.svg' | inline_asset_content -}}
+            </span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
