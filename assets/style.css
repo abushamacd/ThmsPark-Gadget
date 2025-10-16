@@ -260,14 +260,41 @@ html.dark #navbar.sticky_navbar {
 /* Testimonials */
 
 .testim-inner:hover {
-  border-color: #258597;
+  border-color: #339c00;
   transform: scale(1.025);
 }
 
 .testim-inner:hover img {
-  border-color: #258597;
+  border-color: #339c00;
 }
 
 .testim-rating i {
   color: #fdcc28;
+}
+
+.testimonial_carousal .slick-arrow {
+  position: absolute;
+  z-index: 10;
+  background: #339c00;
+  color: #fff;
+  opacity: 0.5;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.testimonial_carousal .slick-arrow:hover {
+  opacity: 1;
+}
+
+.testimonial_carousal .slick_prev {
+  right: 60px;
+  top: -80px;
+}
+
+.testimonial_carousal .slick_next {
+  right: 0px;
+  top: -80px;
 }
