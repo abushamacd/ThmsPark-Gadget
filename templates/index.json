@@ -32,16 +32,21 @@
         "promo_text": {
             "type": "promo",
             "name": "Category Section"
-        }
+        },
+        "promo_sale": {
+            "type": "promo_sale",
+            "name": "Category Section"
+        },
     },
     "order": [
         "hero",
         "texticon",
         "featured_product",
+        "promo_text",
         "testimonial",
         "category",
         "featured_category",
-        "promo_text",
+        "promo_sale",
         "newsletter",
     ]
 }
