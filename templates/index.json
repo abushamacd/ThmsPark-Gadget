@@ -37,9 +37,14 @@
             "type": "promo_sale",
             "name": "Category Section"
         },
+        "featured_collection": {
+            "type": "featured_collection",
+            "name": "Category Section"
+        },
     },
     "order": [
         "hero",
+        "featured_collection",
         "texticon",
         "featured_product",
         "promo_text",

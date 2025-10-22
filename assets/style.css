@@ -337,3 +337,44 @@ html.dark #navbar.sticky_navbar {
   font-weight: 600;
   color: #333;
 }
+
+.product_brand {
+  color: var(#339c00);
+}
+
+.product_title {
+  color: var(#339c00);
+  font-weight: 700;
+}
+
+.wishlist svg:hover,
+.action_bar svg:hover {
+  background-color: var(#339c00);
+}
+
+.action_bar {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  right: 0;
+}
+
+.product_inner:hover .action_bar {
+  opacity: 1;
+  visibility: visible;
+  right: 2%;
+}
+
+.product_inner:hover .product_tag {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.featured_collection_section .slick-arrow {
+  top: -13% !important;
+}
+
+.box_shadow {
+  box-shadow: 0 0 10px #0000001a;
+}

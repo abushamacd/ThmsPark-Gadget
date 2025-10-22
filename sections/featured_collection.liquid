@@ -1,0 +1,120 @@
+<div class="my-20 ">
+  <div class="container">
+    <div class="section_heading flex justify-between items-center">
+      <div class="w-1/2">
+        <h1 class="text-5xl capitalize">Highly Recommended</h1>
+        <p class="text-xl my-4">
+          The Best electronics products continue to drive innovation and shape the way we live, work, and interact with
+          our environment.
+        </p>
+      </div>
+      <div class="">
+        <button class="shop_now border border-[#000000] py-3 px-7 rounded-full my-4 hover:bg-black hover:text-white duration-300 hover:scale-[1.1]">
+          View All
+        </button>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      {% for item in (1..5) %}
+        <div class="product min-h-[380px] relative">
+          <div class="product_inner bg-white rounded-xl box_shadow min-h-[340px] my-[20px] p-4">
+            <button class="wishlist absolute right-[2%] top-[7%] ">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="duration-300 text-black p-1 rounded-full "
+                height="24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <div class="action_bar absolute top-[14%] flex flex-col gap-[5px]">
+              <label for="my-modal-5">
+                <svg
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="duration-300 text-black p-1 rounded-full "
+                  height="24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </label>
+            </div>
+            <a href="">
+              <div class="product_image h-[250px] w-auto flex justify-center items-center overflow-hidden rounded-xl">
+                <img
+                  width=""
+                  height=""
+                  class="rounded-xl bg-center "
+                  src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-h2-m-1-image.png"
+                  alt="product"
+                >
+              </div>
+              <div class="product_info">
+                <h6 class="product_brand uppercase my-[12px] text-sm font-medium">fantech</h6>
+                <h2 class="product_title capitalize font-medium text-[15px] leading-[22px] tracking-[.3px] min-h-[50px]">
+                  Fantech UX1 Wired Black
+                </h2>
+                <div class="flex justify-between items-center">
+                  <div class="react-stars-wrapper-04548799996688243" style="display: flex;">
+                    <div
+                      aria-label="add rating by typing an integer from 0 to 5 or pressing arrow keys"
+                      class="undefined react-stars"
+                      style="overflow: hidden; position: relative;"
+                    >
+                      <span
+                        class=""
+                        data-index="0"
+                        data-forhalf="★"
+                        style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(254, 189, 105); font-size: 20px;"
+                        >★</span
+                      ><span
+                        class=""
+                        data-index="1"
+                        data-forhalf="★"
+                        style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(254, 189, 105); font-size: 20px;"
+                        >★</span
+                      ><span
+                        class=""
+                        data-index="2"
+                        data-forhalf="★"
+                        style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(254, 189, 105); font-size: 20px;"
+                        >★</span
+                      ><span
+                        class=""
+                        data-index="3"
+                        data-forhalf="★"
+                        style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: gray; font-size: 20px;"
+                        >★</span
+                      ><span
+                        class=""
+                        data-index="4"
+                        data-forhalf="★"
+                        style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: gray; font-size: 20px;"
+                        >★</span
+                      >
+                      <p role="status" style="position: absolute; left: -200rem;">3</p>
+                    </div>
+                  </div>
+                  <p class="product_price product_brand">$ <span class="font-bold">41.5</span></p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
