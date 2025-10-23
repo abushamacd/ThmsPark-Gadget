@@ -1,6 +1,6 @@
 <div class="bg-[#dffbdc]">
-  <div class="container flex pt-4 pb-20">
-    <div class="w-4/12">
+  <div class="hidden container md:flex pt-4 pb-20 flex-wrap lg:px-0 md:px-4">
+    <div class="lg:w-9/24 md:w-1/2">
       <h4 class="text-xl mb-3">Contact Info</h4>
       <div class="pr-[100px]">
         <p class="">70 Washington Square South, New York, NY 10012, United States</p>
@@ -28,28 +28,80 @@
         </div>
       </div>
     </div>
-    <div class="w-8/12 flex justify-between">
-      <div class="1/3">
-        <h4 class="text-xl mb-3">Section Title</h4>
-        <ul class="">
-          <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
-          <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
-          <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
-          <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
-        </ul>
+    <div class="lg:w-5/24 md:w-1/2">
+      <h4 class="text-xl mb-3">Section Title</h4>
+      <ul class="">
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+      </ul>
+    </div>
+    <div class="lg:w-5/24 md:w-1/2">
+      <h4 class="text-xl mb-3">Section Title</h4>
+      <ul class="">
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+      </ul>
+    </div>
+    <div class="lg:w-5/24 md:w-1/2">
+      <h4 class="text-xl mb-3">Section Title</h4>
+      <ul class="">
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+        <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="block md:hidden w-full max-w-md bg-white rounded-lg divide-y divide-gray-200" id="accordion">
+    <div class="accordion-item">
+      <button
+        class="accordion-btn w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none"
+      >
+        <span class="font-medium text-gray-800">Contact Info</span>
+        {{- 'angle_down.svg' | inline_asset_content -}}
+      </button>
+      <div class="accordion-content hidden px-4 text-gray-600">
+        <div class="py-4">
+          <p class="">70 Washington Square South, New York, NY 10012, United States</p>
+          <div class="social_icon flex gap-2 mt-4">
+            <div class="instagram h-9 w-9 border border-[#339c00] rounded-full p-2 hover:scale-105 duration-300">
+              <a href="http://">
+                {{- 'instagram.svg' | inline_asset_content -}}
+              </a>
+            </div>
+            <div class="twitter h-9 w-9 border border-[#339c00] rounded-full p-2 hover:scale-105 duration-300">
+              <a href="http://">
+                {{- 'twitter.svg' | inline_asset_content -}}
+              </a>
+            </div>
+            <div class="facebook h-9 w-9 border border-[#339c00] rounded-full p-2 hover:scale-105 duration-300">
+              <a href="http://">
+                {{- 'facebook.svg' | inline_asset_content -}}
+              </a>
+            </div>
+            <div class="youtube h-9 w-9 border border-[#339c00] rounded-full p-2 hover:scale-105 duration-300">
+              <a href="http://">
+                {{- 'youtube.svg' | inline_asset_content -}}
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="1/3">
-        <h4 class="text-xl mb-3">Section Title</h4>
-        <ul class="">
-          <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
-          <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
-          <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
-          <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
-        </ul>
-      </div>
-      <div class="1/3">
-        <h4 class="text-xl mb-3">Section Title</h4>
-        <ul class="">
+    </div>
+    <div class="accordion-item">
+      <button
+        class="accordion-btn w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none"
+      >
+        <span class="font-medium text-gray-800">Section Title</span>
+        {{- 'angle_down.svg' | inline_asset_content -}}
+      </button>
+      <div class="accordion-content hidden px-4 text-gray-600">
+        <ul class="py-4 pl-4">
           <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
           <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>
           <li class="mb-3 capitalize hover:translate-x-[10px] duration-300">item 1</li>

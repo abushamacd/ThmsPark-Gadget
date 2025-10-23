@@ -85,5 +85,21 @@ jQuery(document).ready(function () {
         $("#seconds").text(seconds.toString().padStart(2, "0"));
       }, 1000);
     });
+
+    // accordian
+    $(document).ready(function () {
+      $(".accordion-btn").click(function () {
+        const $currentContent = $(this).next(".accordion-content");
+        const $currentIcon = $(this).find("svg");
+
+        // Close all other contents
+        $(".accordion-content").not($currentContent).slideUp(300);
+        $(".accordion-btn svg").not($currentIcon).removeClass("rotate-180");
+
+        // Toggle current one
+        $currentContent.slideToggle(300);
+        $currentIcon.toggleClass("rotate-180");
+      });
+    });
   });
 });
