@@ -1,73 +1,93 @@
-<div class="featured_category container">
-  <div class="grid-wrapper mt-5">
-    <div class="tall relative">
+<div class="featured_category container mx-auto px-4 lg:px-0">
+  <div
+    class="
+      grid-wrapper mt-5 grid gap-6 auto-rows-[250px] sm:auto-rows-[300px]
+      [grid-auto-flow:dense]
+      grid-cols-1 sm:grid-cols-2 lg:[grid-template-columns:repeat(auto-fit,minmax(250px,1fr))]
+    "
+  >
+    <!-- 🟩 Tall item -->
+    <div class="relative flex justify-center items-center overflow-hidden rounded-md row-span-2">
       <img
+        width=""
+        height=""
         src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-h2-m-1-image.png"
-        height=""
-        width=""
         alt=""
+        class="w-full h-full object-cover transition-transform duration-[1000ms] hover:scale-110"
       >
-      <div class="overly opacity-30 absolute top-0 left-0 right-0 bottom-0 bg-[#070707] rounded-sm"></div>
-      <div class="product_info absolute text-white text-center top-[50px] left-[70px]">
-        <p class="">Product Sub Title</p>
-        <h2 class="text-2xl font-semibold tracking-wider">Product Title</h2>
-        <a class="underline font-semibold" href="http://">Buy Now</a>
+      <div class="absolute inset-0 bg-[#070707] opacity-30 rounded-sm"></div>
+      <div class="absolute text-white text-center top-[40px] left-1/2 -translate-x-1/2 sm:left-[50px] sm:translate-x-0">
+        <p class="text-sm sm:text-base">Product Sub Title</p>
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-wider">Product Title</h2>
+        <a href="#" class="underline font-semibold">Buy Now</a>
       </div>
     </div>
-    <div class="relative">
+
+    <!-- 🟨 Normal item -->
+    <div class="relative flex justify-center items-center overflow-hidden rounded-md">
       <img
+        width=""
+        height=""
         src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-h2-m-3-image.png"
-        height=""
-        width=""
         alt=""
+        class="w-full h-full object-cover transition-transform duration-[1000ms] hover:scale-110"
       >
-      <div class="overly opacity-30 absolute top-0 left-0 right-0 bottom-0 bg-[#070707] rounded-sm"></div>
-      <div class="product_info absolute text-white text-center top-[50px] left-[70px]">
-        <p class="">Product Sub Title</p>
-        <h2 class="text-2xl font-semibold tracking-wider">Product Title 1</h2>
-        <a class="underline font-semibold" href="http://">Buy Now</a>
+      <div class="absolute inset-0 bg-[#070707] opacity-30 rounded-sm"></div>
+      <div class="absolute text-white text-center top-[40px] left-1/2 -translate-x-1/2 sm:left-[50px] sm:translate-x-0">
+        <p class="text-sm sm:text-base">Product Sub Title</p>
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-wider">Product Title 1</h2>
+        <a href="#" class="underline font-semibold">Buy Now</a>
       </div>
     </div>
-    <div class="wide relative">
+
+    <!-- 🟥 Wide item -->
+    <div class="relative flex justify-center items-center overflow-hidden rounded-md col-span-1 sm:col-span-2">
       <img
+        width=""
+        height=""
         src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-h2-m-2-image.png"
-        height=""
-        width=""
         alt=""
+        class="w-full h-full object-cover transition-transform duration-[1000ms] hover:scale-110"
       >
-      <div class="overly opacity-30 absolute top-0 left-0 right-0 bottom-0 bg-[#070707] rounded-sm"></div>
-      <div class="product_info absolute text-white text-center top-[50px] left-[400px]">
-        <p class="">Product Sub Title</p>
-        <h2 class="text-2xl font-semibold tracking-wider">Product Title</h2>
-        <a class="underline font-semibold" href="http://">Buy Now</a>
+      <div class="absolute inset-0 bg-[#070707] opacity-30 rounded-sm"></div>
+      <div class="absolute text-white text-center top-[40px] left-1/2 -translate-x-1/2 sm:left-[150px] sm:translate-x-0 lg:left-[400px]">
+        <p class="text-sm sm:text-base">Product Sub Title</p>
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-wider">Product Title</h2>
+        <a href="#" class="underline font-semibold">Buy Now</a>
       </div>
     </div>
-    <div class="wide relative">
+
+    <!-- 🟦 Wide item -->
+    <div class="relative flex justify-center items-center overflow-hidden rounded-md col-span-1 sm:col-span-2">
       <img
+        width=""
+        height=""
         src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-h2-m-5-image.png"
-        height=""
-        width=""
         alt=""
+        class="w-full h-full object-cover transition-transform duration-[1000ms] hover:scale-110"
       >
-      <div class="overly opacity-30 absolute top-0 left-0 right-0 bottom-0 bg-[#070707] rounded-sm"></div>
-      <div class="product_info absolute text-white text-center top-[50px] left-[70px]">
-        <p class="">Product Sub Title</p>
-        <h2 class="text-2xl font-semibold tracking-wider">Product Title</h2>
-        <a class="underline font-semibold" href="http://">Buy Now</a>
+      <div class="absolute inset-0 bg-[#070707] opacity-30 rounded-sm"></div>
+      <div class="absolute text-white text-center top-[40px] left-1/2 -translate-x-1/2 sm:left-[50px] sm:translate-x-0">
+        <p class="text-sm sm:text-base">Product Sub Title</p>
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-wider">Product Title</h2>
+        <a href="#" class="underline font-semibold">Buy Now</a>
       </div>
     </div>
-    <div class="relative">
+
+    <!-- 🟧 Normal item -->
+    <div class="relative flex justify-center items-center overflow-hidden rounded-md">
       <img
-        src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-h2-m-4-image.png"
-        height=""
         width=""
+        height=""
+        src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-h2-m-4-image.png"
         alt=""
+        class="w-full h-full object-cover transition-transform duration-[1000ms] hover:scale-110"
       >
-      <div class="overly opacity-30 absolute top-0 left-0 right-0 bottom-0 bg-[#070707] rounded-sm"></div>
-      <div class="product_info absolute text-white text-center top-[50px] left-[70px]">
-        <p class="">Product Sub Title</p>
-        <h2 class="text-2xl font-semibold tracking-wider">Product Title</h2>
-        <a class="underline font-semibold" href="http://">Buy Now</a>
+      <div class="absolute inset-0 bg-[#070707] opacity-30 rounded-sm"></div>
+      <div class="absolute text-white text-center top-[40px] left-1/2 -translate-x-1/2 sm:left-[50px] sm:translate-x-0">
+        <p class="text-sm sm:text-base">Product Sub Title</p>
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-wider">Product Title</h2>
+        <a href="#" class="underline font-semibold">Buy Now</a>
       </div>
     </div>
   </div>
