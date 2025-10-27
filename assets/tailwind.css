@@ -258,11 +258,23 @@
   .top-\[7\%\] {
     top: 7%;
   }
+  .top-\[8\%\] {
+    top: 8%;
+  }
+  .top-\[9\%\] {
+    top: 9%;
+  }
   .top-\[10px\] {
     top: 10px;
   }
   .top-\[14\%\] {
     top: 14%;
+  }
+  .top-\[15\%\] {
+    top: 15%;
+  }
+  .top-\[16\%\] {
+    top: 16%;
   }
   .top-\[40px\] {
     top: 40px;
@@ -281,6 +293,9 @@
   }
   .right-\[2\%\] {
     right: 2%;
+  }
+  .right-\[6\%\] {
+    right: 6%;
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);

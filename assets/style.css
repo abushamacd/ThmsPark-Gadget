@@ -329,7 +329,8 @@ html.dark #navbar.sticky_navbar {
 
 .wishlist svg:hover,
 .action_bar svg:hover {
-  background-color: var(#339c00);
+  background-color: #339c00;
+  color: #ffffff;
 }
 
 .action_bar {
@@ -342,7 +343,7 @@ html.dark #navbar.sticky_navbar {
 .product_inner:hover .action_bar {
   opacity: 1;
   visibility: visible;
-  right: 2%;
+  right: 6%;
 }
 
 .product_inner:hover .product_tag {

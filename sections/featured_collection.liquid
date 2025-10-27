@@ -1,9 +1,9 @@
 <div class="my-20 ">
   <div class="container">
-    <div class="section_heading flex justify-between items-center">
-      <div class="w-1/2">
-        <h1 class="text-5xl capitalize">Highly Recommended</h1>
-        <p class="text-xl my-4">
+    <div class="section_heading flex flex-wrap md:justify-between justify-center items-center px-4 lg:px-0">
+      <div class="lg:w-1/2 md:w-3/4 w-full text-center md:text-start">
+        <h1 class="md:text-5xl text-3xl capitalize">Our client’s Happiness</h1>
+        <p class="md:text-xl my-4 text-sm">
           The Best electronics products continue to drive innovation and shape the way we live, work, and interact with
           our environment.
         </p>
@@ -18,7 +18,7 @@
       {% for item in (1..5) %}
         <div class="product min-h-[380px] relative">
           <div class="product_inner bg-white rounded-xl box_shadow min-h-[340px] my-[20px] p-4">
-            <button class="wishlist absolute right-[2%] top-[7%] ">
+            <button class="wishlist absolute right-[6%] top-[9%] ">
               <svg
                 stroke="currentColor"
                 fill="none"
@@ -34,26 +34,24 @@
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
               </svg>
             </button>
-            <div class="action_bar absolute top-[14%] flex flex-col gap-[5px]">
-              <label for="my-modal-5">
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="duration-300 text-black p-1 rounded-full "
-                  height="24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>
-                </svg>
-              </label>
+            <div class="action_bar absolute top-[15%] flex flex-col gap-[5px] right-[6%]">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="duration-300 text-black p-1 rounded-full "
+                height="24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>
+              </svg>
             </div>
             <a href="">
-              <div class="product_image h-[250px] w-auto flex justify-center items-center overflow-hidden rounded-xl">
+              <div class="product_image h-[250px] w-auto flex justify-center items-center overflow-hidden rounded-md">
                 <img
                   width=""
                   height=""
