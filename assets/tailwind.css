@@ -234,6 +234,9 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .inset-3 {
+    inset: calc(var(--spacing) * 3);
+  }
   .-top-2 {
     top: calc(var(--spacing) * -2);
   }
@@ -254,6 +257,9 @@
   }
   .top-\[7\%\] {
     top: 7%;
+  }
+  .top-\[10px\] {
+    top: 10px;
   }
   .top-\[14\%\] {
     top: 14%;
@@ -287,6 +293,9 @@
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .left-\[20px\] {
+    left: 20px;
   }
   .left-\[70px\] {
     left: 70px;
@@ -466,6 +475,9 @@
   .min-h-\[380px\] {
     min-height: 380px;
   }
+  .min-h-screen {
+    min-height: 100vh;
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -562,6 +574,15 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .\!place-content-center {
+    place-content: center !important;
+  }
+  .place-content-center {
+    place-content: center;
+  }
+  .place-items-center {
+    place-items: center;
   }
   .items-center {
     align-items: center;
@@ -738,6 +759,9 @@
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
+  }
+  .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -1134,6 +1158,11 @@
       width: 2px;
     }
   }
+  .md\:w-\[48\%\] {
+    @media (width >= 48rem) {
+      width: 48%;
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1157,6 +1186,11 @@
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
+    }
+  }
+  .md\:justify-center {
+    @media (width >= 48rem) {
+      justify-content: center;
     }
   }
   .md\:border {
@@ -1255,6 +1289,11 @@
       width: calc(9/24 * 100%);
     }
   }
+  .lg\:w-\[32\%\] {
+    @media (width >= 64rem) {
+      width: 32%;
+    }
+  }
   .lg\:w-sm {
     @media (width >= 64rem) {
       width: var(--container-sm);
@@ -1278,6 +1317,11 @@
   .lg\:items-center {
     @media (width >= 64rem) {
       align-items: center;
+    }
+  }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
     }
   }
   .lg\:rounded-none {
