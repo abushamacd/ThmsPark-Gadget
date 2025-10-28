@@ -29,8 +29,10 @@ jQuery(document).ready(function () {
     $(window).on("scroll", function () {
       if ($(this).scrollTop() > 50) {
         $("#navbar").addClass("sticky_navbar");
+        $("#menubar").addClass("menubar");
       } else {
         $("#navbar").removeClass("sticky_navbar");
+        $("#menubar").removeClass("menubar");
       }
     });
     // Slider
