@@ -126,5 +126,30 @@ jQuery(document).ready(function () {
         $currentIcon.toggleClass("rotate-180");
       });
     });
+
+    $(document).ready(function () {
+      $("#menu-toggle").click(function () {
+        $("#sidebar").removeClass("-translate-x-full");
+        $("#overlay").removeClass("hidden");
+      });
+
+      $("#close-sidebar, #overlay").click(function () {
+        $("#sidebar").addClass("-translate-x-full");
+        $("#overlay").addClass("hidden");
+      });
+
+      $(".shop-toggle").on("click", function () {
+        const parent = $(this).closest("li");
+        parent.find("> .shop-dropdown").slideToggle(200);
+        $(this).find(".shop-icon").toggleClass("rotate-180");
+      });
+
+      $(".shop-subtoggle").on("click", function (e) {
+        e.stopPropagation(); // prevent parent toggle from firing
+        const parent = $(this).closest("li");
+        parent.find("> .shop-subdropdown").slideToggle(200);
+        $(this).find(".shop-subicon").toggleClass("rotate-180");
+      });
+    });
   });
 });

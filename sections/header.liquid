@@ -1,4 +1,4 @@
-<div id="menubar" class="dark:text-white text-black relative z-50 md:px-[20px] lg:px-0 ">
+<div id="menubar" class="dark:text-white text-black relative z-50 md:px-[20px] lg:px-0 py-[15px] md:py-0">
   <div
     id="navbar"
     class="container flex justify-between items-center top-0 left-0 right-0 !mx-auto border-b border-[#339C00]"
@@ -8,7 +8,7 @@
         <a href="{{ shop.url }}" class="">{{ shop.name }}</a>
       </h2>
     </div>
-    <div class="order-2 flex-2 ">
+    <div class="order-2 flex-2 hidden md:block">
       <ul class="mainmenu flex gap-6 justify-center items-center">
         <li><a href="#">Home</a></li>
         <li class="relative">
@@ -33,7 +33,10 @@
     <div class="order-3 flex-1 ">
       <ul class="actions flex gap-2 justify-start flex-row-reverse">
         <li>
-          <a href="#" class=""
+          <button id="menu-toggle" class="text-3xl focus:outline-none md:hidden">&#9776;</button>
+        </li>
+        <li>
+          <a href="#" class="hidden md:block"
             ><span class="">{{- 'user.svg' | inline_asset_content -}}</span></a
           >
         </li>
@@ -43,6 +46,151 @@
             <span class="absolute -top-2 -right-2 h-5 w-5 rounded-full bg_primary text-white text-center text-sm"
               >2</span
             ></a
+          >
+        </li>
+        <li class="relative hidden md:block">
+          <a href="">
+            {{- 'wishlist.svg' | inline_asset_content -}}
+            <span class="absolute -top-2 -right-2 h-5 w-5 rounded-full bg_primary text-white text-center text-sm"
+              >2</span
+            ></a
+          >
+        </li>
+        <li class="relative hidden md:block">
+          <a href="">
+            {{- 'compare.svg' | inline_asset_content -}}
+            <span class="absolute -top-2 -right-2 h-5 w-5 rounded-full bg_primary text-white text-center text-sm"
+              >2</span
+            ></a
+          >
+        </li>
+        <li class="relative">
+          <a href="">
+            {{- 'search.svg' | inline_asset_content -}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    id="sidebar"
+    class="fixed top-0 left-0 w-64 h-full bg-white dark:bg-gray-900 shadow-lg transform  transition-transform duration-300 z-50 -translate-x-full"
+  >
+    <div class="p-4 flex justify-between items-center border-b border-gray-300 dark:border-gray-700">
+      <h3 class="text-xl font-semibold dark:text-white">Menu</h3>
+      <button id="close-sidebar" class="text-2xl font-bold">&times;</button>
+    </div>
+    <ul class="p-4 space-y-4 overflow-y-scroll h-[calc(100%-180px)]">
+      <li>
+        <a href="#" class="block text-gray-800 dark:text-white hover:text-green-600">Home</a>
+      </li>
+
+      <!-- Shop Dropdown -->
+      <li class="relative">
+        <button
+          class="shop-toggle flex justify-between items-center w-full text-gray-800 dark:text-white hover:text-green-600 focus:outline-none"
+        >
+          <span>Shop</span>
+          <svg
+            class="shop-icon h-5 w-5 transform transition-transform duration-300"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <ul class="shop-dropdown hidden pl-4 mt-2 space-y-2">
+          <li><a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-green-600">Category 1</a></li>
+
+          <li class="relative">
+            <button
+              class="shop-subtoggle flex justify-between items-center w-full text-gray-800 dark:text-white hover:text-green-600 focus:outline-none"
+            >
+              <span>Shop</span>
+              <svg
+                class="shop-subicon h-5 w-5 transform transition-transform duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <ul class="shop-subdropdown hidden pl-4 mt-2 space-y-2">
+              <li><a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-green-600">Category 1</a></li>
+              <li><a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-green-600">Category 2</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-green-600">Category 3</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="block text-gray-800 dark:text-white hover:text-green-600">About Us</a>
+      </li>
+
+      <!-- Shop Dropdown -->
+      <li class="relative">
+        <button
+          class="shop-toggle flex justify-between items-center w-full text-gray-800 dark:text-white hover:text-green-600 focus:outline-none"
+        >
+          <span>Shop</span>
+          <svg
+            class="shop-icon h-5 w-5 transform transition-transform duration-300"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <ul class="shop-dropdown hidden pl-4 mt-2 space-y-2">
+          <li><a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-green-600">Category 1</a></li>
+
+          <li class="relative">
+            <button
+              class="shop-subtoggle flex justify-between items-center w-full text-gray-800 dark:text-white hover:text-green-600 focus:outline-none"
+            >
+              <span>Shop</span>
+              <svg
+                class="shop-subicon h-5 w-5 transform transition-transform duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <ul class="shop-subdropdown hidden pl-4 mt-2 space-y-2">
+              <li><a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-green-600">Category 1</a></li>
+              <li><a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-green-600">Category 2</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" class="block text-gray-700 dark:text-gray-300 hover:text-green-600">Category 3</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="block text-gray-800 dark:text-white hover:text-green-600">Contact</a>
+      </li>
+    </ul>
+    <div class="action border-t border-gray-400 flex justify-center items-center h-[100px] absolute bottom-0 w-full">
+      <ul class="actions flex gap-2 justify-center flex-row-reverse">
+        <li>
+          <a href="#" class=""
+            ><span class="">{{- 'user.svg' | inline_asset_content -}}</span></a
           >
         </li>
         <li class="relative">
@@ -61,14 +209,15 @@
             ></a
           >
         </li>
-        <li class="relative">
-          <a href="">
-            {{- 'search.svg' | inline_asset_content -}}
-          </a>
-        </li>
       </ul>
     </div>
   </div>
+
+  <!-- Overlay -->
+  <div
+    id="overlay"
+    class="fixed inset-0 bg-black opacity-70 hidden z-40"
+  ></div>
 </div>
 
 {% schema %}
