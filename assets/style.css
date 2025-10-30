@@ -278,6 +278,11 @@ html.dark #navbar.sticky_navbar {
     margin-right: 25px;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sticky_navbar {
+    width: 96%;
+  }
+}
 
 /*  */
 .marquee {
