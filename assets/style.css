@@ -271,6 +271,19 @@ html.dark #navbar.sticky_navbar {
   .testimonial_carousal .slick_next {
     right: 25px;
   }
+
+  #navbar:hover:not(.sticky_navbar) {
+    top: 0px !important;
+    width: 95%;
+  }
+
+  #navbar {
+    padding: 0px 15px !important;
+  }
+
+  #navbar.sticky_navbar {
+    width: 95%;
+  }
 }
 
 @media only screen and (min-width: 768px) {

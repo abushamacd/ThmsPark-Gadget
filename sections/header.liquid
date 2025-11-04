@@ -9,7 +9,7 @@
       </h2>
     </div>
     <div class="order-2 flex-2 hidden md:block">
-      <ul class="mainmenu flex gap-6 justify-center items-center">
+      <ul class="mainmenu flex lg:gap-6 md:gap-3 justify-center items-center">
         <li><a href="#">Home</a></li>
         <li class="relative">
           <a class="flex justify-center items-center relative top-[2px]" href="#"
@@ -31,7 +31,7 @@
       </ul>
     </div>
     <div class="order-3 flex-1 ">
-      <ul class="actions flex gap-2 justify-start flex-row-reverse">
+      <ul class="actions flex gap-2 justify-start items-center flex-row-reverse py-4 md:py-0">
         <li>
           <button id="menu-toggle" class="text-3xl focus:outline-none md:hidden">&#9776;</button>
         </li>
@@ -188,6 +188,9 @@
     </ul>
     <div class="action border-t border-gray-400 flex justify-center items-center h-[100px] absolute bottom-0 w-full">
       <ul class="actions flex gap-2 justify-center flex-row-reverse">
+        <li>
+          {%- render 'theme_switcher' -%}
+        </li>
         <li>
           <a href="#" class=""
             ><span class="">{{- 'user.svg' | inline_asset_content -}}</span></a

@@ -360,17 +360,20 @@
   .my-\[20px\] {
     margin-block: 20px;
   }
-  .-mt-\[36px\] {
-    margin-top: calc(36px * -1);
+  .-mt-\[-97px\] {
+    margin-top: calc(-97px * -1);
   }
   .-mt-\[55px\] {
     margin-top: calc(55px * -1);
   }
-  .-mt-\[65px\] {
-    margin-top: calc(65px * -1);
-  }
   .-mt-\[70px\] {
     margin-top: calc(70px * -1);
+  }
+  .-mt-\[97px\] {
+    margin-top: calc(97px * -1);
+  }
+  .-mt-\[100px\] {
+    margin-top: calc(100px * -1);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -463,29 +466,11 @@
   .h-\[500px\] {
     height: 500px;
   }
-  .h-\[1000px\] {
-    height: 1000px;
-  }
-  .h-\[calc\(100\%-100px\)\] {
-    height: calc(100% - 100px);
-  }
   .h-\[calc\(100\%-180px\)\] {
     height: calc(100% - 180px);
   }
-  .h-\[calc\(100\%-200px\)\] {
-    height: calc(100% - 200px);
-  }
-  .h-\[calc\(100\%-500px\)\] {
-    height: calc(100% - 500px);
-  }
-  .h-auto {
-    height: auto;
-  }
   .h-full {
     height: 100%;
-  }
-  .h-screen {
-    height: 100vh;
   }
   .min-h-\[50px\] {
     min-height: 50px;
@@ -662,9 +647,6 @@
       border-color: var(--color-gray-200);
     }
   }
-  .overflow-auto {
-    overflow: auto;
-  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -818,6 +800,9 @@
   .py-\[15px\] {
     padding-block: 15px;
   }
+  .py-\[30px\] {
+    padding-block: 30px;
+  }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
   }
@@ -969,9 +954,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .opacity-5 {
-    opacity: 5%;
   }
   .opacity-30 {
     opacity: 30%;
@@ -1284,6 +1266,11 @@
       justify-content: flex-start;
     }
   }
+  .md\:gap-3 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 3);
+    }
+  }
   .md\:border {
     @media (width >= 48rem) {
       border-style: var(--tw-border-style);
@@ -1436,6 +1423,11 @@
       justify-content: space-between;
     }
   }
+  .lg\:gap-6 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
   .lg\:rounded-none {
     @media (width >= 64rem) {
       border-radius: 0;
@@ -1482,11 +1474,6 @@
   .dark\:bg-\[\#333333\] {
     &:where(.dark, .dark *) {
       background-color: #333333;
-    }
-  }
-  .dark\:bg-gray-800 {
-    &:where(.dark, .dark *) {
-      background-color: var(--color-gray-800);
     }
   }
   .dark\:bg-gray-900 {
