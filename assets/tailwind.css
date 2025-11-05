@@ -7,8 +7,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-800: oklch(44.4% 0.177 26.899);
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-green-600: oklch(62.7% 0.194 149.214);
+    --color-green-800: oklch(44.8% 0.119 151.328);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
@@ -360,17 +362,8 @@
   .my-\[20px\] {
     margin-block: 20px;
   }
-  .-mt-\[-97px\] {
-    margin-top: calc(-97px * -1);
-  }
   .-mt-\[55px\] {
     margin-top: calc(55px * -1);
-  }
-  .-mt-\[70px\] {
-    margin-top: calc(70px * -1);
-  }
-  .-mt-\[97px\] {
-    margin-top: calc(97px * -1);
   }
   .-mt-\[100px\] {
     margin-top: calc(100px * -1);
@@ -799,9 +792,6 @@
   }
   .py-\[15px\] {
     padding-block: 15px;
-  }
-  .py-\[30px\] {
-    padding-block: 30px;
   }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
@@ -1461,6 +1451,11 @@
       border-color: #fdfdfd;
     }
   }
+  .dark\:border-\[\#fff\] {
+    &:where(.dark, .dark *) {
+      border-color: #fff;
+    }
+  }
   .dark\:border-gray-700 {
     &:where(.dark, .dark *) {
       border-color: var(--color-gray-700);
@@ -1491,6 +1486,11 @@
       color: #DFFBDC;
     }
   }
+  .dark\:text-black {
+    &:where(.dark, .dark *) {
+      color: var(--color-black);
+    }
+  }
   .dark\:text-gray-300 {
     &:where(.dark, .dark *) {
       color: var(--color-gray-300);
@@ -1499,6 +1499,24 @@
   .dark\:text-white {
     &:where(.dark, .dark *) {
       color: var(--color-white);
+    }
+  }
+  .dark\:hover\:bg-white {
+    &:where(.dark, .dark *) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-white);
+        }
+      }
+    }
+  }
+  .hover\:dark\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        &:where(.dark, .dark *) {
+          color: var(--color-black);
+        }
+      }
     }
   }
   .\[\&\>svg\]\:h-\[34px\] {

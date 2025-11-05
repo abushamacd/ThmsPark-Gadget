@@ -351,6 +351,12 @@ html.dark #navbar.sticky_navbar {
   color: #ffffff;
 }
 
+html.dark .wishlist svg:hover,
+html.dark .action_bar svg:hover {
+  background-color: #339c00;
+  color: #ffffff;
+}
+
 .action_bar {
   opacity: 0;
   visibility: hidden;
@@ -374,6 +380,18 @@ html.dark #navbar.sticky_navbar {
   top: -13% !important;
 }
 
+html.dark .box_shadow {
+  box-shadow: 0 4px 5px #ffffff14;
+}
+
+html.dark .box_shadow:hover {
+  box-shadow: 0 16px 24px #ffffff14;
+}
+
 .box_shadow {
-  box-shadow: 0 0 10px #0000001a;
+  box-shadow: 0 4px 5px #00000014;
+}
+
+.box_shadow:hover {
+  box-shadow: 0 16px 24px #00000014;
 }

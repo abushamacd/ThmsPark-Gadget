@@ -1,7 +1,7 @@
 <div class="my-20 ">
   <div class="container">
     <div class="section_heading flex flex-wrap md:justify-between justify-center items-center px-4 lg:px-0">
-      <div class="lg:w-1/2 md:w-3/4 w-full text-center md:text-start">
+      <div class="lg:w-1/2 md:w-3/4 w-full text-center md:text-start text-black dark:text-white">
         <h1 class="md:text-5xl text-3xl capitalize">Our client’s Happiness</h1>
         <p class="md:text-xl my-4 text-sm">
           The Best electronics products continue to drive innovation and shape the way we live, work, and interact with
@@ -9,15 +9,15 @@
         </p>
       </div>
       <div class="">
-        <button class="shop_now border border-[#000000] py-3 px-7 rounded-full my-4 hover:bg-black hover:text-white duration-300 hover:scale-[1.1]">
+        <button class="shop_now border border-[#000000] dark:border-[#fff] dark:hover:bg-white hover:bg-black dark:text-white text-black hover:dark:text-black hover:text-white py-3 px-7 rounded-full my-4 duration-300 hover:scale-[1.1]">
           View All
         </button>
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {% for item in (1..5) %}
         <div class="product min-h-[380px] relative">
-          <div class="product_inner bg-white rounded-xl box_shadow min-h-[340px] my-[20px] p-4">
+          <div class="product_inner rounded-xl box_shadow min-h-[340px] my-[20px] p-4 duration-300">
             <button class="wishlist absolute right-[6%] top-[9%] ">
               <svg
                 stroke="currentColor"
@@ -42,7 +42,7 @@
                 viewBox="0 0 24 24"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="duration-300 text-black p-1 rounded-full "
+                class="duration-300  p-1 rounded-full "
                 height="24"
                 width="24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@
                   alt="product"
                 >
               </div>
-              <div class="product_info">
+              <div class="product_info text-black dark:text-white duration-300">
                 <h6 class="product_brand uppercase my-[12px] text-sm font-medium">fantech</h6>
                 <h2 class="product_title capitalize font-medium text-[15px] leading-[22px] tracking-[.3px] min-h-[50px]">
                   Fantech UX1 Wired Black

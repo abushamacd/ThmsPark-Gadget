@@ -44,12 +44,12 @@
     },
     "order": [
         "hero",
+        "category",
         "featured_collection",
         "texticon",
         "featured_product",
         "promo_text",
         "testimonial",
-        "category",
         "featured_category",
         "promo_sale",
         "newsletter",

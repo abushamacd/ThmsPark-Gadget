@@ -4,7 +4,7 @@
       {{ section.settings.ab_text }}
     </div>
     <div class="text-end py-1  gap-2 md:flex hidden">
-      {%- render 'theme_switcher' -%}
+      {% comment %} {%- render 'theme_switcher' -%} {% endcomment %}
       <div class="text-[#339C00] dark:text-[#DFFBDC] flex">
         {{- 'location.svg' | inline_asset_content -}}
         Track Order
