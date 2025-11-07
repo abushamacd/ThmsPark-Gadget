@@ -208,6 +208,9 @@
   }
 }
 @layer utilities {
+  .invisible {
+    visibility: hidden;
+  }
   .visible {
     visibility: visible;
   }
@@ -698,6 +701,9 @@
   .bg-\[\#070707\] {
     background-color: #070707;
   }
+  .bg-\[\#121212\] {
+    background-color: #121212;
+  }
   .bg-\[\#DFFBDC\] {
     background-color: #DFFBDC;
   }
@@ -706,9 +712,6 @@
   }
   .bg-\[\#dffbdc\] {
     background-color: #dffbdc;
-  }
-  .bg-\[\#fefefe\] {
-    background-color: #fefefe;
   }
   .bg-black {
     background-color: var(--color-black);
@@ -749,14 +752,8 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-  .p-\[2px\] {
-    padding: 2px;
-  }
   .p-\[3px\] {
     padding: 3px;
-  }
-  .p-\[5px\] {
-    padding: 5px;
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -772,6 +769,9 @@
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -796,6 +796,9 @@
   }
   .py-\[15px\] {
     padding-block: 15px;
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
   }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
@@ -1068,6 +1071,20 @@
     &:hover {
       @media (hover: hover) {
         scale: 1.1;
+      }
+    }
+  }
+  .hover\:scale-\[1\.05\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.05;
+      }
+    }
+  }
+  .hover\:scale-\[1\.5\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.5;
       }
     }
   }
@@ -1470,6 +1487,11 @@
       background-color: #339C00;
     }
   }
+  .dark\:bg-\[\#121212\] {
+    &:where(.dark, .dark *) {
+      background-color: #121212;
+    }
+  }
   .dark\:bg-\[\#333333\] {
     &:where(.dark, .dark *) {
       background-color: #333333;
@@ -1493,6 +1515,16 @@
   .dark\:text-gray-300 {
     &:where(.dark, .dark *) {
       color: var(--color-gray-300);
+    }
+  }
+  .dark\:text-gray-400 {
+    &:where(.dark, .dark *) {
+      color: var(--color-gray-400);
+    }
+  }
+  .dark\:text-gray-500 {
+    &:where(.dark, .dark *) {
+      color: var(--color-gray-500);
     }
   }
   .dark\:text-white {

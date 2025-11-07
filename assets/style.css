@@ -67,7 +67,7 @@ html.dark #navbar:hover:not(.sticky_navbar) {
 }
 
 html.dark #navbar.sticky_navbar {
-  background-color: #333333;
+  background-color: #121212;
   transition: all 0.3s ease-in-out;
 }
 
@@ -299,11 +299,11 @@ html.dark #navbar.sticky_navbar {
 
 /*  */
 .marquee {
-  overflow: hidden;
   white-space: nowrap;
-  box-sizing: border-box;
-  background: #f9f9f9;
-  padding: 15px 0;
+}
+
+.marquee svg {
+  color: #339c00 !important;
 }
 
 .marquee-group {
@@ -333,16 +333,6 @@ html.dark #navbar.sticky_navbar {
   gap: 15px;
   font-size: 18px;
   font-weight: 600;
-  color: #333;
-}
-
-.product_brand {
-  color: var(#339c00);
-}
-
-.product_title {
-  color: var(#339c00);
-  font-weight: 700;
 }
 
 .wishlist svg:hover,

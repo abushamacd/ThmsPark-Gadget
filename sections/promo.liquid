@@ -1,9 +1,9 @@
-<div class="bg-black py-10 my-10">
-  <div class="promo_text">
+<div class="promo_text py-[50px] bg-[#dffbdc] dark:bg-[#121212]">
+  <div class="">
     <div class="marquee">
       <div class="marquee-content">
         {% for item in (1..4) %}
-          <div class="marquee-group">
+          <div class="marquee-group dark:text-white text-black duration-300">
             <span class="marquee-item"
               >Creative Design
               {{- 'star_square.svg' | inline_asset_content -}}
